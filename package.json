@@ -1,0 +1,17 @@
+{
+  "name": "etl-enumeration-districts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "highland": "^2.10.1",
+    "ramda": "^0.22.1",
+    "request": "^2.79.0",
+    "turf-union": "^3.0.12"
+  }
+}
