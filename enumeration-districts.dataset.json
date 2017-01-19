@@ -1,3 +1,11 @@
 {
+
+  "id": "enumeration-district",
+  "title": "New York City Enumeration Districts",
+  "license": "CC0",
+  "description": "1900 census enumeration districts for Manhattan and the Bronx, traced from maps created by Barbara Hillman",
+  "author": "NYPL",
+  "website": "https://www.nypl.org/",
+  "editor": "Bert Spaan"
 }
 
