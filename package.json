@@ -1,17 +1,26 @@
 {
   "name": "etl-enumeration-districts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "enumeration-districts.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nypl-spacetime/etl-enumeration-districts.git"
   },
-  "author": "",
+  "scripts": {
+    "test": "standard",
+    "readme": "spacetime-generate-etl-readme ./ -o README.md"
+  },
+  "devDependencies": {
+    "spacetime-generate-etl-readme": "^0.1.5",
+    "standard": "^8.4.0"
+  },
+  "author": "Bert Spaan",
   "license": "ISC",
   "dependencies": {
-    "highland": "^2.10.1",
-    "ramda": "^0.22.1",
-    "request": "^2.79.0",
-    "turf-union": "^3.0.12"
+    "@turf/union": "^4.1.0",
+    "highland": "^2.10.5",
+    "ramda": "^0.23.0",
+    "request": "^2.81.0"
   }
 }

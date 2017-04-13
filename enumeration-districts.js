@@ -4,7 +4,7 @@ const H = require('highland')
 const R = require('ramda')
 const request = require('request')
 const turf = {
-  union: require('turf-union')
+  union: require('@turf/union')
 }
 
 // const topojson = require('topojson')
