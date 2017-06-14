@@ -1,6 +1,6 @@
 {
   "name": "etl-enumeration-districts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "enumeration-districts.js",
   "repository": {

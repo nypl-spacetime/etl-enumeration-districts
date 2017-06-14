@@ -38,11 +38,10 @@ function transform (config, dirs, tools, callback) {
     .split()
     .compact()
     .map(JSON.parse)
-    // TODO: log if submissions without data or geojson are encountered!
-    .filter((submission) => submission && submission.data && submission.data.geojson)
+    .map((item) => item.submissions)
+    .flatten()
     .map((submission) => submission.data.geojson.features)
     .flatten()
-    .compact()
     .filter((feature) => feature && feature.properties && feature.properties.fields.number)
     .group((feature) => feature.properties.fields.number)
     .map(featuresFromGroup)
