@@ -40,6 +40,8 @@ function transform (config, dirs, tools, callback) {
     .map(JSON.parse)
     .map((item) => item.submissions)
     .flatten()
+    .map((item) => item.steps)
+    .flatten()
     .map((submission) => submission.data.geojson.features)
     .flatten()
     .filter((feature) => feature && feature.properties && feature.properties.fields.number)
