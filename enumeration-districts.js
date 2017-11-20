@@ -57,7 +57,7 @@ function transform (config, dirs, tools, callback) {
         validSince: year,
         validUntil: year,
         data: {
-          number: data.number
+          number: parseInt(data.number)
         },
         geometry: union(data.features).geometry
       }

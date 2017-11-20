@@ -1,11 +1,37 @@
 {
-
   "id": "enumeration-districts",
   "title": "New York City Enumeration Districts",
   "license": "CC0",
   "description": "1900 census enumeration districts for Manhattan and the Bronx, traced from maps created by Barbara Hillman",
-  "author": "NYPL",
-  "website": "https://www.nypl.org/",
-  "editor": "Bert Spaan"
+  "homepage": "https://www.nypl.org/",
+  "sources": [
+    {
+      "title": "GeoJSON polygons from Brick-by-brick API",
+      "path": "http://brick-by-brick.herokuapp.com/tasks/trace-maps/submissions/all.ndjson"
+    }
+  ],
+  "contributors": [
+    {
+      "author": "Philip Sutton",
+      "role": "author"
+    },
+    {
+      "title": "Bert Spaan",
+      "role": "editor"
+    }
+  ],
+  "fields": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "number"
+    ],
+    "properties": {
+      "number": {
+        "type": "integer",
+        "description": "Enumeration district number"
+      }
+    }
+  }
 }
-
